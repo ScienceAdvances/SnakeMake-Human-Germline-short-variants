@@ -44,7 +44,6 @@ Annotate variant calls with VEP (VEP)
 ### Outputs
 
 ```text
-.
 ├── config
 │   ├── captured_regions.bed
 │   ├── config.yaml
