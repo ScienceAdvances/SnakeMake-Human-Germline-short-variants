@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+GATK	base_recalibrator	SRR24443168.grp	/home/victor/Project/WES/results/prepared/SRR24443168.grp
+GATK	base_recalibrator	SRR24443169.grp	/home/victor/Project/WES/results/prepared/SRR24443169.grp
+Samtools	stats	SRR24443168	/home/victor/Project/WES/results/prepared/SRR24443168.txt
+Samtools	stats	SRR24443169	/home/victor/Project/WES/results/prepared/SRR24443169.txt

@@ -1,0 +1,58 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+description: snakemake  configuration  file
+
+type: object
+
+properties:
+  samples:
+    type: string
+  warpper_mirror:
+    type: string
+  fastq:
+    type: object
+    properties:
+      pe:
+        type: boolean
+      dir:
+        type: string
+      duplicates:
+        type: string
+      restrict_regions:
+        type: string
+    required:
+      - pe
+      - dir
+  GATK:
+    type: object
+    properties:
+      dir:
+        type: string
+      species:
+        type: string
+      release:
+        type: string
+      build:
+        type: string
+    required:
+      - dir
+      - species
+      - release
+      - build
+  HaplotypeCaller:
+    type: object
+    properties:
+      interval_padding:
+        type: integer
+  VEP:
+    type: object
+    properties:
+      plugins:
+        type: array
+      extra:
+        type: string
+required:
+  - samples
+  - GATK
+  - warpper_mirror
+  - VEP

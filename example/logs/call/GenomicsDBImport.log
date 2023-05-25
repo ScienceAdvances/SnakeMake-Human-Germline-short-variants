@@ -1,0 +1,40 @@
+Using GATK jar /home/victor/Project/WES/.snakemake/conda/ad8a041d8ab2b6159985f26b3200d65e_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx120M -jar /home/victor/Project/WES/.snakemake/conda/ad8a041d8ab2b6159985f26b3200d65e_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar GenomicsDBImport --variant results/called/SRR24443168.gvcf.gz --variant results/called/SRR24443169.gvcf.gz --intervals config/captured_regions.bed --tmp-dir /tmp/tmpyldmnbrn --genomicsdb-workspace-path results/called/db
+17:35:21.553 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/victor/Project/WES/.snakemake/conda/ad8a041d8ab2b6159985f26b3200d65e_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+17:35:21.701 INFO  GenomicsDBImport - ------------------------------------------------------------
+17:35:21.711 INFO  GenomicsDBImport - The Genome Analysis Toolkit (GATK) v4.4.0.0
+17:35:21.711 INFO  GenomicsDBImport - For support and documentation go to https://software.broadinstitute.org/gatk/
+17:35:21.712 INFO  GenomicsDBImport - Executing as victor@shpc-1385-instance-rVoBySAX on Linux v5.15.0-71-generic amd64
+17:35:21.712 INFO  GenomicsDBImport - Java runtime: OpenJDK 64-Bit Server VM v17.0.3-internal+0-adhoc..src
+17:35:21.713 INFO  GenomicsDBImport - Start Date/Time: May 24, 2023 at 5:35:21 PM CST
+17:35:21.713 INFO  GenomicsDBImport - ------------------------------------------------------------
+17:35:21.713 INFO  GenomicsDBImport - ------------------------------------------------------------
+17:35:21.717 INFO  GenomicsDBImport - HTSJDK Version: 3.0.5
+17:35:21.719 INFO  GenomicsDBImport - Picard Version: 3.0.0
+17:35:21.726 INFO  GenomicsDBImport - Built for Spark Version: 3.3.1
+17:35:21.727 INFO  GenomicsDBImport - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+17:35:21.728 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+17:35:21.728 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+17:35:21.729 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+17:35:21.729 INFO  GenomicsDBImport - Deflater: IntelDeflater
+17:35:21.730 INFO  GenomicsDBImport - Inflater: IntelInflater
+17:35:21.730 INFO  GenomicsDBImport - GCS max retries/reopens: 20
+17:35:21.754 INFO  GenomicsDBImport - Requester pays: disabled
+17:35:21.759 INFO  GenomicsDBImport - Initializing engine
+17:35:23.200 INFO  FeatureManager - Using codec BEDCodec to read file file:///home/victor/Project/WES/config/captured_regions.bed
+17:35:23.217 INFO  IntervalArgumentCollection - Processing 58989998 bp from intervals
+17:35:23.221 INFO  GenomicsDBImport - Done initializing engine
+17:35:24.334 INFO  GenomicsDBLibLoader - GenomicsDB native library version : 1.4.4-ce4e1b9
+17:35:24.337 INFO  GenomicsDBImport - Vid Map JSON file will be written to /home/victor/Project/WES/results/called/db/vidmap.json
+17:35:24.337 INFO  GenomicsDBImport - Callset Map JSON file will be written to /home/victor/Project/WES/results/called/db/callset.json
+17:35:24.338 INFO  GenomicsDBImport - Complete VCF Header will be written to /home/victor/Project/WES/results/called/db/vcfheader.vcf
+17:35:24.338 INFO  GenomicsDBImport - Importing to workspace - /home/victor/Project/WES/results/called/db
+17:35:27.076 INFO  GenomicsDBImport - Importing batch 1 with 2 samples
+17:38:17.938 INFO  GenomicsDBImport - Done importing batch 1/1
+17:38:17.941 INFO  GenomicsDBImport - Import completed!
+17:38:17.941 INFO  GenomicsDBImport - Shutting down engine
+[May 24, 2023 at 5:38:17 PM CST] org.broadinstitute.hellbender.tools.genomicsdb.GenomicsDBImport done. Elapsed time: 2.94 minutes.
+Runtime.totalMemory()=113246208
+Tool returned:
+true

@@ -1,0 +1,40 @@
+Using GATK jar /home/victor/Project/WES/.snakemake/conda/ad8a041d8ab2b6159985f26b3200d65e_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx819M -jar /home/victor/Project/WES/.snakemake/conda/ad8a041d8ab2b6159985f26b3200d65e_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar ApplyVQSR --variant results/filtered/all.INDEL.vcf.gz --recal-file results/filtered/all.INDEL.vcf --reference /home/victor/DataHub/GATK/Homo_sapiens_assembly38.fasta --tranches-file results/filtered/all.INDEL.tranches --mode INDEL --truth-sensitivity-filter-level 99.0 --tmp-dir /tmp/tmpljd8ztue --output results/filtered/ApplyVQSR.INDEL.vcf.gz
+19:31:02.795 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/victor/Project/WES/.snakemake/conda/ad8a041d8ab2b6159985f26b3200d65e_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+19:31:05.973 INFO  ApplyVQSR - ------------------------------------------------------------
+19:31:06.057 INFO  ApplyVQSR - The Genome Analysis Toolkit (GATK) v4.4.0.0
+19:31:06.057 INFO  ApplyVQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
+19:31:06.058 INFO  ApplyVQSR - Executing as victor@shpc-1385-instance-rVoBySAX on Linux v5.15.0-71-generic amd64
+19:31:06.058 INFO  ApplyVQSR - Java runtime: OpenJDK 64-Bit Server VM v17.0.3-internal+0-adhoc..src
+19:31:06.058 INFO  ApplyVQSR - Start Date/Time: May 25, 2023 at 7:31:02 PM CST
+19:31:06.059 INFO  ApplyVQSR - ------------------------------------------------------------
+19:31:06.059 INFO  ApplyVQSR - ------------------------------------------------------------
+19:31:06.060 INFO  ApplyVQSR - HTSJDK Version: 3.0.5
+19:31:06.061 INFO  ApplyVQSR - Picard Version: 3.0.0
+19:31:06.061 INFO  ApplyVQSR - Built for Spark Version: 3.3.1
+19:31:06.061 INFO  ApplyVQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+19:31:06.062 INFO  ApplyVQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+19:31:06.062 INFO  ApplyVQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+19:31:06.062 INFO  ApplyVQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+19:31:06.062 INFO  ApplyVQSR - Deflater: IntelDeflater
+19:31:06.063 INFO  ApplyVQSR - Inflater: IntelInflater
+19:31:06.063 INFO  ApplyVQSR - GCS max retries/reopens: 20
+19:31:06.063 INFO  ApplyVQSR - Requester pays: disabled
+19:31:06.064 INFO  ApplyVQSR - Initializing engine
+19:31:07.717 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/victor/Project/WES/results/filtered/all.INDEL.vcf
+19:31:08.191 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/victor/Project/WES/results/filtered/all.INDEL.vcf.gz
+19:31:08.796 INFO  ApplyVQSR - Done initializing engine
+19:31:08.822 INFO  ApplyVQSR - Read tranche TruthSensitivityTranche targetTruthSensitivity=90.00 minVQSLod=1.6787 known=(2063 @ 0.0000) novel=(555 @ 0.0000) truthSites(1348 accessible, 1213 called), name=VQSRTrancheINDEL0.00to90.00]
+19:31:08.822 INFO  ApplyVQSR - Read tranche TruthSensitivityTranche targetTruthSensitivity=99.00 minVQSLod=-3.2645 known=(3423 @ 0.0000) novel=(1777 @ 0.0000) truthSites(1348 accessible, 1334 called), name=VQSRTrancheINDEL90.00to99.00]
+19:31:08.822 INFO  ApplyVQSR - Read tranche TruthSensitivityTranche targetTruthSensitivity=99.90 minVQSLod=-10.0622 known=(3559 @ 0.0000) novel=(2175 @ 0.0000) truthSites(1348 accessible, 1346 called), name=VQSRTrancheINDEL99.00to99.90]
+19:31:08.823 INFO  ApplyVQSR - Read tranche TruthSensitivityTranche targetTruthSensitivity=100.00 minVQSLod=-51.0689 known=(3562 @ 0.0000) novel=(2176 @ 0.0000) truthSites(1348 accessible, 1348 called), name=VQSRTrancheINDEL99.90to100.00]
+19:31:08.936 INFO  ApplyVQSR - Keeping all variants in tranche TruthSensitivityTranche targetTruthSensitivity=99.00 minVQSLod=-3.2645 known=(3423 @ 0.0000) novel=(1777 @ 0.0000) truthSites(1348 accessible, 1334 called), name=VQSRTrancheINDEL90.00to99.00]
+19:31:09.275 INFO  ProgressMeter - Starting traversal
+19:31:09.278 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+19:31:11.667 WARN  IntelInflater - Zero Bytes Written : 0
+19:31:11.747 INFO  ProgressMeter -        chr1:48300016              0.0                  5738         140065.1
+19:31:11.748 INFO  ProgressMeter - Traversal complete. Processed 5738 total variants in 0.0 minutes.
+19:31:11.773 INFO  ApplyVQSR - Shutting down engine
+[May 25, 2023 at 7:31:11 PM CST] org.broadinstitute.hellbender.tools.walkers.vqsr.ApplyVQSR done. Elapsed time: 0.16 minutes.
+Runtime.totalMemory()=473956352

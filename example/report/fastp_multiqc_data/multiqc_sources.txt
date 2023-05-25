@@ -1,0 +1,4 @@
+Module	Section	Sample Name	Source
+Snippy	snippy	multiqc	/home/victor/Project/WES/report/fastp_multiqc_data/multiqc.log
+fastp	all_sections	SRR24443168	/home/victor/Project/WES/report/SRR24443168.fastp.json
+fastp	all_sections	SRR24443169	/home/victor/Project/WES/report/SRR24443169.fastp.json

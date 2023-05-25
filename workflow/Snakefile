@@ -1,0 +1,20 @@
+include: "rules/common.smk"
+
+##### Target rules #####
+
+rule all:
+    input:
+        "report/vep_report.html",
+        "report/fastp_multiqc.html",
+        "report/prepare_multiqc.html",
+
+
+##### Modules #####
+
+include: "rules/ref.smk"
+include: "rules/trim.smk"
+include: "rules/prepare.smk"
+include: "rules/call.smk"
+include: "rules/filter.smk"
+include: "rules/qc.smk"
+include: "rules/annotate.smk"

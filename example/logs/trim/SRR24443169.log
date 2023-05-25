@@ -1,0 +1,31 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 52617200
+total bases: 7877218167
+Q20 bases: 7658876811(97.2282%)
+Q30 bases: 7313296547(92.8411%)
+
+Read1 after filtering:
+total reads: 52617200
+total bases: 7877218167
+Q20 bases: 7658876811(97.2282%)
+Q30 bases: 7313296547(92.8411%)
+
+Filtering result:
+reads passed filter: 52617200
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+
+Duplication rate (may be overestimated since this is SE data): 28.1794%
+
+JSON report: report/SRR24443169.fastp.json
+HTML report: report/SRR24443169.fastp.html
+
+fastp --thread 20 --in1 raw/SRR24443169.fastq.gz --out1 results/trimmed/SRR24443169.fastq.gz --json report/SRR24443169.fastp.json --html report/SRR24443169.fastp.html 
+fastp v0.23.2, time used: 694 seconds

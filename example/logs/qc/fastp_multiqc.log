@@ -1,0 +1,11 @@
+
+  /// MultiQC 🔍 | v1.14
+
+|           multiqc | Search path : /home/victor/Project/WES/report
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 10/10  
+|             fastp | Found 2 reports
+|           multiqc | Compressing plot data
+|           multiqc | Deleting    : report/fastp_multiqc_data   (-f was specified)
+|           multiqc | Report      : report/fastp_multiqc.html
+|           multiqc | Data        : report/fastp_multiqc_data
+|           multiqc | MultiQC complete

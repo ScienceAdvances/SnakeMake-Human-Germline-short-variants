@@ -1,0 +1,11 @@
+
+  /// MultiQC 🔍 | v1.14
+
+|           multiqc | Search path : /home/victor/Project/WES/results/prepared
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 10/10  
+| base_recalibrator | Found 2 BaseRecalibrator reports
+|          samtools | Found 2 stats reports
+|           multiqc | Compressing plot data
+|           multiqc | Report      : report/prepare_multiqc.html
+|           multiqc | Data        : report/prepare_multiqc_data
+|           multiqc | MultiQC complete

@@ -1,0 +1,37 @@
+[2023-05-23 22:37:55,997] multiqc                                            [DEBUG  ]  This is MultiQC v1.14
+[2023-05-23 22:37:55,998] multiqc                                            [DEBUG  ]  Command used: /home/victor/Project/WES/.snakemake/conda/518ce073341c430d25f85c55398d7ad5_/bin/multiqc --force -o report -n fastp_multiqc.html report
+[2023-05-23 22:37:57,149] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.14
+[2023-05-23 22:37:57,149] multiqc                                            [DEBUG  ]  Working dir : /home/victor/Project/WES
+[2023-05-23 22:37:57,149] multiqc                                            [DEBUG  ]  Template    : default
+[2023-05-23 22:37:57,149] multiqc                                            [DEBUG  ]  Running Python 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:57:19) [GCC 11.3.0]
+[2023-05-23 22:37:57,151] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, ccs, ngsderive, purple, conpair, lima, peddy, somalier, methylQA, mosdepth, phantompeakqualtools, qualimap, preseq, hifiasm, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, bustools, goleft_indexcov, gffcompare, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, sambamba, gopeaks, homer, hops, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dragen_fastqc, dedup, pbmarkdup, damageprofiler, biobambam2, jcvi, mtnucratio, picard, vep, sentieon, prokka, qc3C, nanostat, samblaster, samtools, sexdeterrmine, eigenstratdatabasetools, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, snippy, umitools, bbmap, bismark, biscuit, diamond, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, cellranger, snpsplit, odgi, pangolin, nextclade, humid, kat, leehom, adapterRemoval, bbduk, clipandmerge, cutadapt, flexbar, kaiju, kraken, malt, motus, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, filtlong, prinseqplusplus, pychopper, porechop, pycoqc, minionqc, anglerfish, multivcfanalyzer, clusterflow, checkqc, bcl2fastq, bclconvert, interop, ivar, flash, seqyclean, optitype, whatshap
+[2023-05-23 22:37:57,171] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmpb38saif2
+[2023-05-23 22:37:58,008] multiqc                                            [INFO   ]  Search path : /home/victor/Project/WES/report
+[2023-05-23 22:37:58,909] multiqc                                            [DEBUG  ]  Summary of files that were skipped by the search: [skipped_module_specific_max_filesize: 15] // [skipped_no_match: 7] // [skipped_ignore_pattern: 1]
+[2023-05-23 22:38:04,480] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.7.1
+[2023-05-23 22:38:04,502] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.7.1
+[2023-05-23 22:38:04,518] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2023-05-23 22:38:04,551] multiqc                                            [DEBUG  ]  No samples found: snippy
+[2023-05-23 22:38:04,607] multiqc.modules.fastp.fastp                        [DEBUG  ]  fastp JSON did not have a 'adapter_cutting' key, skipping: 'SRR24443168.fastp.json'
+[2023-05-23 22:38:04,607] multiqc.modules.fastp.fastp                        [DEBUG  ]  Could not calculate 'pct_adapter' (KeyError): SRR24443168.fastp.json
+[2023-05-23 22:38:04,607] multiqc.modules.fastp.fastp                        [DEBUG  ]  No duplication rate plot data: SRR24443168.fastp.json
+[2023-05-23 22:38:04,607] multiqc.modules.fastp.fastp                        [DEBUG  ]  No insert size plot data: SRR24443168.fastp.json
+[2023-05-23 22:38:04,607] multiqc.modules.fastp.fastp                        [DEBUG  ]  Read quality read2_before_filtering not found: SRR24443168.fastp.json
+[2023-05-23 22:38:04,607] multiqc.modules.fastp.fastp                        [DEBUG  ]  Content curve data read2_before_filtering not found: SRR24443168.fastp.json
+[2023-05-23 22:38:04,608] multiqc.modules.fastp.fastp                        [DEBUG  ]  Read quality read2_after_filtering not found: SRR24443168.fastp.json
+[2023-05-23 22:38:04,608] multiqc.modules.fastp.fastp                        [DEBUG  ]  Content curve data read2_after_filtering not found: SRR24443168.fastp.json
+[2023-05-23 22:38:04,624] multiqc.modules.fastp.fastp                        [DEBUG  ]  fastp JSON did not have a 'adapter_cutting' key, skipping: 'SRR24443169.fastp.json'
+[2023-05-23 22:38:04,624] multiqc.modules.fastp.fastp                        [DEBUG  ]  Could not calculate 'pct_adapter' (KeyError): SRR24443169.fastp.json
+[2023-05-23 22:38:04,624] multiqc.modules.fastp.fastp                        [DEBUG  ]  No duplication rate plot data: SRR24443169.fastp.json
+[2023-05-23 22:38:04,624] multiqc.modules.fastp.fastp                        [DEBUG  ]  No insert size plot data: SRR24443169.fastp.json
+[2023-05-23 22:38:04,625] multiqc.modules.fastp.fastp                        [DEBUG  ]  Read quality read2_before_filtering not found: SRR24443169.fastp.json
+[2023-05-23 22:38:04,625] multiqc.modules.fastp.fastp                        [DEBUG  ]  Content curve data read2_before_filtering not found: SRR24443169.fastp.json
+[2023-05-23 22:38:04,625] multiqc.modules.fastp.fastp                        [DEBUG  ]  Read quality read2_after_filtering not found: SRR24443169.fastp.json
+[2023-05-23 22:38:04,625] multiqc.modules.fastp.fastp                        [DEBUG  ]  Content curve data read2_after_filtering not found: SRR24443169.fastp.json
+[2023-05-23 22:38:04,625] multiqc.modules.fastp.fastp                        [INFO   ]  Found 2 reports
+[2023-05-23 22:38:04,676] multiqc                                            [INFO   ]  Compressing plot data
+[2023-05-23 22:38:04,834] multiqc                                            [WARNING]  Deleting    : report/fastp_multiqc_data   (-f was specified)
+[2023-05-23 22:38:04,874] multiqc                                            [INFO   ]  Report      : report/fastp_multiqc.html
+[2023-05-23 22:38:04,874] multiqc                                            [INFO   ]  Data        : report/fastp_multiqc_data
+[2023-05-23 22:38:04,874] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpb38saif2/multiqc_data' to 'report/fastp_multiqc_data'
+[2023-05-23 22:38:05,488] multiqc                                            [INFO   ]  MultiQC complete

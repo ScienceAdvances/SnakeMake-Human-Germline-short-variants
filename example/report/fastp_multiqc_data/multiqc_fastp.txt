@@ -1,0 +1,3 @@
+Sample	command
+SRR24443168	fastp --thread 20 --in1 raw/SRR24443168.fastq.gz --out1 results/trimmed/SRR24443168.fastq.gz --json report/SRR24443168.fastp.json --html report/SRR24443168.fastp.html 
+SRR24443169	fastp --thread 20 --in1 raw/SRR24443169.fastq.gz --out1 results/trimmed/SRR24443169.fastq.gz --json report/SRR24443169.fastp.json --html report/SRR24443169.fastp.html 

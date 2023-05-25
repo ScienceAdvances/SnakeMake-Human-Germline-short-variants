@@ -1,0 +1,3 @@
+Sample	fastp_mqc-generalstats-fastp-pct_duplication	fastp_mqc-generalstats-fastp-after_filtering_q30_rate	fastp_mqc-generalstats-fastp-after_filtering_q30_bases	fastp_mqc-generalstats-fastp-filtering_result_passed_filter_reads	fastp_mqc-generalstats-fastp-after_filtering_gc_content	fastp_mqc-generalstats-fastp-pct_surviving
+SRR24443168	28.254600000000003	0.940494	12198890858.0	130085314.0	0.512596	100.0
+SRR24443169	28.179399999999998	0.928411	7313296547.0	52617200.0	0.548114	100.0

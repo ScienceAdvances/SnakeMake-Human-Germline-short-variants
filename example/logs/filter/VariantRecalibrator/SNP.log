@@ -1,0 +1,85 @@
+Using GATK jar /home/victor/Project/WES/.snakemake/conda/56acc9ccd5f505f5c7aa579c54f325d6_/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx1638M -jar /home/victor/Project/WES/.snakemake/conda/56acc9ccd5f505f5c7aa579c54f325d6_/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar VariantRecalibrator --variant results/filtered/all.SNP.vcf.gz --reference /home/victor/DataHub/GATK/Homo_sapiens_assembly38.fasta --mode SNP --resource:hapmap,known=false,training=true,truth=true,prior=15.0 /home/victor/DataHub/GATK/hapmap_3.3.hg38.vcf.gz --resource:omni,known=false,training=true,truth=false,prior=12.0 /home/victor/DataHub/GATK/1000G_omni2.5.hg38.vcf.gz --resource:g1k,known=false,training=true,truth=false,prior=10.0 /home/victor/DataHub/GATK/1000G_phase1.snps.high_confidence.hg38.vcf.gz --resource:dbsnp,known=true,training=false,truth=false,prior=2.0 /home/victor/DataHub/GATK/Homo_sapiens_assembly38.dbsnp138.vcf.gz --tranches-file results/filtered/all.SNP.tranches -an QD -an MQRankSum -an ReadPosRankSum -an FS -an SOR -an DP --max-gaussians 4 --tmp-dir /tmp/tmpwutk_8mb --output results/filtered/all.SNP.vcf
+19:26:54.066 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/victor/Project/WES/.snakemake/conda/56acc9ccd5f505f5c7aa579c54f325d6_/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+19:26:54.342 INFO  VariantRecalibrator - ------------------------------------------------------------
+19:26:54.346 INFO  VariantRecalibrator - The Genome Analysis Toolkit (GATK) v4.3.0.0
+19:26:54.346 INFO  VariantRecalibrator - For support and documentation go to https://software.broadinstitute.org/gatk/
+19:26:54.346 INFO  VariantRecalibrator - Executing as victor@shpc-1385-instance-rVoBySAX on Linux v5.15.0-71-generic amd64
+19:26:54.347 INFO  VariantRecalibrator - Java runtime: OpenJDK 64-Bit Server VM v11.0.15-internal+0-adhoc..src
+19:26:54.347 INFO  VariantRecalibrator - Start Date/Time: May 25, 2023 at 7:26:53 PM CST
+19:26:54.347 INFO  VariantRecalibrator - ------------------------------------------------------------
+19:26:54.347 INFO  VariantRecalibrator - ------------------------------------------------------------
+19:26:54.348 INFO  VariantRecalibrator - HTSJDK Version: 3.0.1
+19:26:54.348 INFO  VariantRecalibrator - Picard Version: 2.27.5
+19:26:54.349 INFO  VariantRecalibrator - Built for Spark Version: 2.4.5
+19:26:54.349 INFO  VariantRecalibrator - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+19:26:54.349 INFO  VariantRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+19:26:54.349 INFO  VariantRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+19:26:54.350 INFO  VariantRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+19:26:54.350 INFO  VariantRecalibrator - Deflater: IntelDeflater
+19:26:54.353 INFO  VariantRecalibrator - Inflater: IntelInflater
+19:26:54.353 INFO  VariantRecalibrator - GCS max retries/reopens: 20
+19:26:54.353 INFO  VariantRecalibrator - Requester pays: disabled
+19:26:54.354 INFO  VariantRecalibrator - Initializing engine
+19:26:55.345 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/victor/DataHub/GATK/hapmap_3.3.hg38.vcf.gz
+19:26:55.799 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/victor/DataHub/GATK/1000G_omni2.5.hg38.vcf.gz
+19:26:56.227 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/victor/DataHub/GATK/1000G_phase1.snps.high_confidence.hg38.vcf.gz
+19:26:57.047 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/victor/DataHub/GATK/Homo_sapiens_assembly38.dbsnp138.vcf.gz
+19:26:57.177 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/victor/Project/WES/results/filtered/all.SNP.vcf.gz
+19:26:57.700 INFO  VariantRecalibrator - Done initializing engine
+19:26:57.703 INFO  TrainingSet - Found hapmap track: 	Known = false 	Training = true 	Truth = true 	Prior = Q15.0
+19:26:57.703 INFO  TrainingSet - Found omni track: 	Known = false 	Training = true 	Truth = false 	Prior = Q12.0
+19:26:57.704 INFO  TrainingSet - Found g1k track: 	Known = false 	Training = true 	Truth = false 	Prior = Q10.0
+19:26:57.704 INFO  TrainingSet - Found dbsnp track: 	Known = true 	Training = false 	Truth = false 	Prior = Q2.0
+19:26:57.871 INFO  ProgressMeter - Starting traversal
+19:26:57.871 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+19:27:08.498 INFO  ProgressMeter -        chr1:18731447              0.2                 16000          90361.4
+19:27:18.811 INFO  ProgressMeter -        chr1:39932523              0.3                 34000          97425.9
+19:27:26.160 WARN  IntelInflater - Zero Bytes Written : 0
+19:27:27.609 INFO  ProgressMeter -        chr1:58347171              0.5                 46346          93508.6
+19:27:27.610 INFO  ProgressMeter - Traversal complete. Processed 46346 total variants in 0.5 minutes.
+19:27:27.646 INFO  VariantDataManager - QD: 	 mean = 25.89	 standard deviation = 7.15
+19:27:27.672 INFO  VariantDataManager - MQRankSum: 	 mean = -0.03	 standard deviation = 0.39
+19:27:27.705 INFO  VariantDataManager - ReadPosRankSum: 	 mean = 0.22	 standard deviation = 0.96
+19:27:27.716 INFO  VariantDataManager - FS: 	 mean = 0.33	 standard deviation = 1.42
+19:27:27.723 INFO  VariantDataManager - SOR: 	 mean = 1.12	 standard deviation = 0.77
+19:27:27.730 INFO  VariantDataManager - DP: 	 mean = 13.64	 standard deviation = 26.87
+19:27:27.931 INFO  VariantDataManager - Annotation order is: [QD, DP, SOR, ReadPosRankSum, FS, MQRankSum]
+19:27:27.964 INFO  VariantDataManager - Training with 18154 variants after standard deviation thresholding.
+19:27:27.969 INFO  GaussianMixtureModel - Initializing model with 100 k-means iterations...
+19:27:28.862 INFO  VariantRecalibratorEngine - Finished iteration 0.
+19:27:29.520 INFO  VariantRecalibratorEngine - Finished iteration 5. 	Current change in mixture coefficients = 0.12461
+19:27:29.881 INFO  VariantRecalibratorEngine - Finished iteration 10. 	Current change in mixture coefficients = 0.02026
+19:27:30.290 INFO  VariantRecalibratorEngine - Finished iteration 15. 	Current change in mixture coefficients = 0.00143
+19:27:30.290 INFO  VariantRecalibratorEngine - Convergence after 15 iterations!
+19:27:30.379 INFO  VariantRecalibratorEngine - Evaluating full set of 46346 variants...
+19:27:31.611 INFO  VariantDataManager - Selected worst 1983 scoring variants --> variants with LOD <= -5.0000.
+19:27:31.612 INFO  GaussianMixtureModel - Initializing model with 100 k-means iterations...
+19:27:31.717 INFO  VariantRecalibratorEngine - Finished iteration 0.
+19:27:31.737 INFO  VariantRecalibratorEngine - Finished iteration 5. 	Current change in mixture coefficients = 0.03124
+19:27:31.757 INFO  VariantRecalibratorEngine - Finished iteration 10. 	Current change in mixture coefficients = 0.03427
+19:27:31.770 INFO  VariantRecalibratorEngine - Finished iteration 15. 	Current change in mixture coefficients = 0.03931
+19:27:31.781 INFO  VariantRecalibratorEngine - Finished iteration 20. 	Current change in mixture coefficients = 0.02055
+19:27:31.793 INFO  VariantRecalibratorEngine - Finished iteration 25. 	Current change in mixture coefficients = 0.00308
+19:27:31.798 INFO  VariantRecalibratorEngine - Convergence after 27 iterations!
+19:27:31.805 INFO  VariantRecalibratorEngine - Evaluating full set of 46346 variants...
+19:27:32.519 INFO  TrancheManager - Finding 4 tranches for 46346 variants
+19:27:32.603 INFO  TrancheManager -   TruthSensitivityTranche threshold 100.00 => selection metric threshold 0.000
+19:27:32.653 INFO  TrancheManager -   Found tranche for 100.000: 0.000 threshold starting with variant 0; running score is 0.000 
+19:27:32.654 INFO  TrancheManager -   TruthSensitivityTranche is TruthSensitivityTranche targetTruthSensitivity=100.00 minVQSLod=-183.4692 known=(21083 @ 2.5074) novel=(25263 @ 2.0058) truthSites(7439 accessible, 7439 called), name=anonymous]
+19:27:32.654 INFO  TrancheManager -   TruthSensitivityTranche threshold 99.90 => selection metric threshold 0.001
+19:27:32.694 INFO  TrancheManager -   Found tranche for 99.900: 0.001 threshold starting with variant 150; running score is 0.001 
+19:27:32.695 INFO  TrancheManager -   TruthSensitivityTranche is TruthSensitivityTranche targetTruthSensitivity=99.90 minVQSLod=-7.0376 known=(21019 @ 2.5096) novel=(25177 @ 2.0024) truthSites(7439 accessible, 7431 called), name=anonymous]
+19:27:32.695 INFO  TrancheManager -   TruthSensitivityTranche threshold 99.00 => selection metric threshold 0.010
+19:27:32.717 INFO  TrancheManager -   Found tranche for 99.000: 0.010 threshold starting with variant 2465; running score is 0.010 
+19:27:32.718 INFO  TrancheManager -   TruthSensitivityTranche is TruthSensitivityTranche targetTruthSensitivity=99.00 minVQSLod=-0.0644 known=(20421 @ 2.5170) novel=(23460 @ 1.9912) truthSites(7439 accessible, 7364 called), name=anonymous]
+19:27:32.718 INFO  TrancheManager -   TruthSensitivityTranche threshold 90.00 => selection metric threshold 0.100
+19:27:32.730 INFO  TrancheManager -   Found tranche for 90.000: 0.100 threshold starting with variant 5301; running score is 0.100 
+19:27:32.731 INFO  TrancheManager -   TruthSensitivityTranche is TruthSensitivityTranche targetTruthSensitivity=90.00 minVQSLod=1.6135 known=(18795 @ 2.4857) novel=(22250 @ 1.9814) truthSites(7439 accessible, 6695 called), name=anonymous]
+19:27:32.733 INFO  VariantRecalibrator - Writing out recalibration table...
+19:27:34.619 INFO  VariantRecalibrator - Shutting down engine
+[May 25, 2023 at 7:27:34 PM CST] org.broadinstitute.hellbender.tools.walkers.vqsr.VariantRecalibrator done. Elapsed time: 0.68 minutes.
+Runtime.totalMemory()=1717567488
+Tool returned:
+true

@@ -1,0 +1,22 @@
+samples: config/samples.tsv
+
+warpper_mirror: https://jihulab.com/BioQuest/snakemake-wrappers/raw/v1.31.1/
+
+fastq:
+    dir: raw # raw fastq files directory
+    pe: false # pair end
+    duplicates: remove # Can be 'none' (default), 'mark' or 'remove'.
+    restrict_regions: config/captured_regions.bed
+
+GATK:
+    dir: /home/victor/DataHub/GATK
+    species: homo_sapiens
+    release: "109"
+    build: GRCh38
+
+HaplotypeCaller:
+    interval_padding: 250
+
+VEP:
+    # plugins: [] # e.g. [LoFtool]
+    extra: --everything

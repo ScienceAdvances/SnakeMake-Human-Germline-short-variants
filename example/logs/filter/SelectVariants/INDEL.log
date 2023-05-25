@@ -1,0 +1,34 @@
+Using GATK jar /home/victor/Project/WES/.snakemake/conda/8a60038741edb07c80af14b6f403fe26_/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx819M -jar /home/victor/Project/WES/.snakemake/conda/8a60038741edb07c80af14b6f403fe26_/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar SelectVariants --variant results/called/all.vcf.gz --reference /home/victor/DataHub/GATK/Homo_sapiens_assembly38.fasta --select-type-to-include INDEL --tmp-dir /tmp/tmpqsrabyn_ --output results/filtered/all.INDEL.vcf.gz
+17:43:24.537 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/victor/Project/WES/.snakemake/conda/8a60038741edb07c80af14b6f403fe26_/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+17:43:25.821 INFO  SelectVariants - ------------------------------------------------------------
+17:43:25.822 INFO  SelectVariants - The Genome Analysis Toolkit (GATK) v4.3.0.0
+17:43:25.822 INFO  SelectVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+17:43:25.825 INFO  SelectVariants - Executing as victor@shpc-1385-instance-rVoBySAX on Linux v5.15.0-71-generic amd64
+17:43:25.825 INFO  SelectVariants - Java runtime: OpenJDK 64-Bit Server VM v11.0.15-internal+0-adhoc..src
+17:43:25.825 INFO  SelectVariants - Start Date/Time: May 24, 2023 at 5:43:23 PM CST
+17:43:25.825 INFO  SelectVariants - ------------------------------------------------------------
+17:43:25.825 INFO  SelectVariants - ------------------------------------------------------------
+17:43:25.826 INFO  SelectVariants - HTSJDK Version: 3.0.1
+17:43:25.827 INFO  SelectVariants - Picard Version: 2.27.5
+17:43:25.827 INFO  SelectVariants - Built for Spark Version: 2.4.5
+17:43:25.827 INFO  SelectVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+17:43:25.827 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+17:43:25.827 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+17:43:25.827 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+17:43:25.827 INFO  SelectVariants - Deflater: IntelDeflater
+17:43:25.827 INFO  SelectVariants - Inflater: IntelInflater
+17:43:25.828 INFO  SelectVariants - GCS max retries/reopens: 20
+17:43:25.828 INFO  SelectVariants - Requester pays: disabled
+17:43:25.828 INFO  SelectVariants - Initializing engine
+17:43:27.283 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/victor/Project/WES/results/called/all.vcf.gz
+17:43:27.884 INFO  SelectVariants - Done initializing engine
+17:43:28.148 INFO  ProgressMeter - Starting traversal
+17:43:28.149 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+17:43:30.801 WARN  IntelInflater - Zero Bytes Written : 0
+17:43:30.840 INFO  ProgressMeter -        chr1:48300016              0.0                  5738         127985.1
+17:43:30.840 INFO  ProgressMeter - Traversal complete. Processed 5738 total variants in 0.0 minutes.
+17:43:30.861 INFO  SelectVariants - Shutting down engine
+[May 24, 2023 at 5:43:30 PM CST] org.broadinstitute.hellbender.tools.walkers.variantutils.SelectVariants done. Elapsed time: 0.12 minutes.
+Runtime.totalMemory()=859832320
